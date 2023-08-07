@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -ue
+set -uex
 
 helpmsg() {
     command echo "Usage: $0 [--help | -h]" 0>&2
