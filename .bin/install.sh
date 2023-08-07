@@ -46,7 +46,11 @@ while [ $# -gt 0 ];do
     shift
 done
 
+if [ -n "$(git clean -nxdf)" ]; then
+    echo "repository is not clean"
+    exit -1
+fi
+
 link_to_homedir
-git config --global include.path "~/.gitconfig_shared"
-command echo -e "\e[1;36m Install completed!!!! \e[m"
+command echo -e "\e[1;36m Install completed. \e[m"
 
