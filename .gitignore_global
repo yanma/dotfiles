@@ -1,0 +1,6 @@
+*.bak
+.vimrc.local
+.localtags/
+.vimsessions/
+.envrc
+workspace.code-workspace
